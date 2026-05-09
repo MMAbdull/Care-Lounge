@@ -1,14 +1,7 @@
-import express from "express";
-
-const app = express();
+import app from "./app.js";
 
 const PORT = 5000;
 
-app.get('/', (req,res) => {
-  res.send('Care Lounge Api Running');
-});
-
 app.listen(PORT, () => {
-console.log(`server running on port ${PORT}`)
+  console.log(`server running on port ${PORT}`); 
 });
-
